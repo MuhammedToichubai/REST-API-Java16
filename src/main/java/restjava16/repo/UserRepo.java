@@ -1,4 +1,7 @@
 package restjava16.repo;
 
-public interface UserRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+import restjava16.models.User;
+
+public interface UserRepo extends JpaRepository<User, Long> {
 }

@@ -1,10 +1,17 @@
-spring.application.name=REST-API-Java16
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5454/postgres
+    username: postgres
+    password: postgres
 
-spring.datasource.url=jdbc:postgresql://localhost:5454/postgres
-spring.datasource.username=postgres
-spring.datasource.password=postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
 
-spring.jpa.hibernate.ddl-auto=create
-spring.jpa.show-sql=true
+    show-sql: true
 
+  application:
+    name: REST-API-Java16
 
+server:
+  port: 8080

@@ -1,4 +1,5 @@
 package restjava16.enums;
 
-public class Gender {
+public enum Gender {
+    MALE, FEMALE
 }
